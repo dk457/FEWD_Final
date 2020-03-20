@@ -1,0 +1,138 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* REUSABLE STYLES */
+.h-container {
+  padding: 50px 5px;
+}
+
+/* HEADER */
+.h-header {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  background-color: #ffc605;
+  z-index: -1;
+}
+
+.h-logo-container {
+  width: 150px;
+}
+
+.h-nav {
+  width: 5000px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 10px;
+  background-color: #ffc605;
+  letter-spacing: 2px;
+}
+
+.h-logo {
+  padding: 10px 30px;
+  width: 70px;
+}
+
+.h-nav-element {
+  cursor: pointer;
+  padding: 5px 5px;
+  width: 100px;
+  color: black;
+  font-weight: 900;
+}
+
+.h-nav-element a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* About Us */
+
+.main-about-us {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-image: url(https://i.pinimg.com/564x/62/63/23/6263238848c28637d0bf30c8aee3c6b7.jpg);
+  background-position: 50% -200px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #ffc605;
+  height: 800px;
+  padding: 30px;
+}
+
+.about-us-title {
+  font-size: 45px;
+  word-wrap: break-word;
+  padding: 20px 10px;
+  letter-spacing: 4px;
+}
+
+.about-us-title h1 {
+  text-decoration: none;
+  color: black;
+}
+
+.about-us-title p {
+  font-size: 20px;
+}
+
+.about-us-content-box {
+  background: white;
+  opacity: 0.7;
+  display: block;
+  margin: 10px 10px 30px 0;
+  padding: 20px 50px;
+  height: 600px;
+  width: 500px;
+  line-height: 2;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* Footer */
+
+.h-footer {
+  align-items: center;
+  background-color: #2b2d2e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+h6 {
+  font-size: 30px;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+.h-footer-text p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  width: 95%;
+}

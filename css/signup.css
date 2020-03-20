@@ -1,0 +1,168 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* REUSABLE STYLES */
+.h-container {
+  padding: 50px 5px;
+}
+
+/* HEADER */
+.h-header {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  background-color: #079a94;
+  z-index: -1;
+}
+
+.h-logo-container {
+  width: 150px;
+}
+
+.h-nav {
+  width: 5000px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 10px;
+  background-color: #079a94;
+  letter-spacing: 2px;
+}
+
+.h-logo {
+  padding: 10px 30px;
+  width: 70px;
+}
+
+.h-nav-element {
+  cursor: pointer;
+  padding: 5px 5px;
+  width: 100px;
+  color: #f8f8f8;
+  font-weight: 900;
+}
+
+.h-nav-element a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Our Goal */
+
+.main-sign-up {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url(https://i.pinimg.com/564x/93/1e/ae/931eae8f669abd81b71825a554a5a559.jpg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-color: #079a94;
+  height: 800px;
+  padding: 30px;
+}
+
+.sign-up-title {
+  font-size: 45px;
+  word-wrap: break-word;
+  padding: 20px 10px;
+  text-align: left;
+  color: #f8f8f8;
+  letter-spacing: 4px;
+}
+
+.sign-up-title p {
+  font-size: 20px;
+}
+
+.sign-up-content-box {
+  background: white;
+  opacity: 0.9;
+  display: block;
+  margin: 10px 10px 30px 0;
+  padding: 20px 50px;
+  height: 600px;
+  width: 600px;
+  line-height: 2;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid gray;
+  background: #f1f1f1;
+}
+
+button {
+  background-color: #2f4553;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 15px auto;
+  text-align: center;
+  transition: 0.4s ease-in-out;
+  width: 100px;
+  font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+  background-color: #d0baac;
+  color: #263742;
+}
+
+.h-button-text {
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+/* Footer */
+
+.h-footer {
+  align-items: center;
+  background-color: #2b2d2e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+h6 {
+  font-size: 30px;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+.h-footer-text p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  width: 95%;
+}

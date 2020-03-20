@@ -1,0 +1,150 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* REUSABLE STYLES */
+.h-container {
+  padding: 50px 5px;
+}
+
+/* HEADER */
+.h-header {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  background-color: #fcd6d3;
+  z-index: -1;
+}
+
+.h-logo-container {
+  width: 150px;
+}
+
+.h-nav {
+  width: 5000px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 10px;
+  background-color: #fcd6d3;
+  letter-spacing: 2px;
+}
+
+.h-logo {
+  padding: 10px 30px;
+  width: 70px;
+}
+
+.h-nav-element {
+  cursor: pointer;
+  padding: 5px 5px;
+  width: 100px;
+  color: black;
+  font-weight: 900;
+}
+
+.h-nav-element a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* HERO */
+
+.h-main-photo {
+  align-items: center;
+  background-image: url("https://media.glamour.com/photos/5704348bc3d41b55462f7a20/master/w_1600%2Cc_limit/slideshow-your-hair-your-way-01-natural-curls-main.jpg");
+  background-position: 50% -20px;
+  margin-top: -10px;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  height: 1200px;
+  width: 100%;
+  letter-spacing: 3px;
+}
+
+.h-intro-content {
+  color: #f5f2d0;
+  position: absolute;
+  text-align: left;
+  width: 400px;
+}
+
+.h-intro-title {
+  font-size: 64px;
+  letter-spacing: 3px;
+}
+
+.h-intro-subtitle {
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 2;
+}
+
+/* Introduction */
+.h-introduction-container {
+  padding: 50px;
+  background-color: #fcd6d3;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.h-introduction-title {
+  font-size: 25px;
+  line-height: 2;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+
+.h-footer {
+  align-items: center;
+  background-color: #2b2d2e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+h6 {
+  font-size: 30px;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+.h-footer-text p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+}
+
+@media;
