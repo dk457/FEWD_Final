@@ -1,43 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>H | Danbi Kim</title>
+
+    <!-- Google Font embed -->
     <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <title>FEWD Final Project Starter Template</title>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <a href="landingpage.html">Landing Page</a>
-    <a href="aboutus.html">About Us</a>
-    <a href="ourgoal.html">Our Goal</a>
-    <a href="signup.html">Sign Up</a>
-    <a href="contactus.html">Contact Us</a>
-    <h1>
-      FEWD Final Project Starter Template Please Fork
-    </h1>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+    <header class="h-header">
+      <div class="h-logo-container">
+        <a href="index.html"
+          ><img
+            class="h-logo"
+            src="https://i.imgur.com/UF5Wy2Q.png"
+            alt="H Logo"
+        /></a>
+      </div>
+      <nav class="h-nav">
+        <ul class="nav-links">
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="ourgoal.html">Our Goal</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+        <!-- <div class="h-nav-element"><a href="aboutus.html">About Us</a></div>
+        <div class="h-nav-element"><a href="ourgoal.html">Our Goal</a></div>
+        <div class="h-nav-element"><a href="signup.html">Sign Up</a></div> -->
+
+        <div class="burger">
+          <div class="burger-line1"></div>
+          <div class="burger-line2"></div>
+          <div class="burger-line3"></div>
+        </div>
+
+        <div class="nav-active"></div>
+      </nav>
+    </header>
+
+    <section class="h-main-photo image-mask-darken">
+      <div class="h-intro-content">
+        <h1 class="h-intro-title">Hey sister,</h1>
+        <h2 class="h-intro-subtitle">We deserve better. Period.</h2>
+      </div>
+    </section>
+
+    <!-- Introduction section -->
+    <section class="h-container h-introduction-container">
+      <h2 class="h-introduction-title">Better product. Better period.</h2>
+      <h2 class="h-introduction-title">
+        Never Run Out. And help a sister out.
+      </h2>
+      <button id="learn-more-button">Learn More</button>
+    </section>
+
+    <!--  Footer -->
+
+    <footer class="h-footer">
+      <hr />
+      <div class="h-footer-text">
+        <h6>H</h6>
+        <p>Got questions? Ask us <a href="contactus.html">here!</a></p>
+      </div>
+    </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>

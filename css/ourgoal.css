@@ -21,10 +21,9 @@ h6 {
 .h-header {
   align-items: center;
   display: flex;
-  height: 80px;
+  height: 90px;
   justify-content: space-between;
   background-color: #efdfbe;
-  z-index: -1;
 }
 
 .h-logo-container {
@@ -32,10 +31,16 @@ h6 {
 }
 
 .h-nav {
-  width: 5000px;
+  width: 400px;
+}
+
+.nav-links {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  height: 70px;
+  right: 8px;
+  width: 90%;
   font-size: 10px;
   background-color: #efdfbe;
   letter-spacing: 2px;
@@ -46,18 +51,33 @@ h6 {
   width: 70px;
 }
 
-.h-nav-element {
+.h-nav li {
   cursor: pointer;
   padding: 5px 5px;
-  width: 100px;
+  width: 50%;
   color: black;
   font-weight: 900;
+  list-style: none;
 }
 
-.h-nav-element a {
+.h-nav a {
   color: black;
   font-weight: 900;
   text-decoration: none;
+  font-size: 15px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+  transition: all 0.3s ease;
 }
 
 /* Our Goal */
@@ -128,4 +148,82 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 10px;
   width: 95%;
+}
+
+/* MEDIA SCREEN */
+
+@media screen and (max-width: 1024px) {
+  .h-nav-element {
+    cursor: pointer;
+    padding: 5px 5px;
+    width: 13%;
+    color: black;
+    font-weight: 900;
+  }
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 8px;
+    padding-left: 100px;
+    height: 1520px;
+    text-align: center;
+    top: 80px;
+    background-color: #fffff2;
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    color: black;
+    font-weight: 900;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    line-height: 8;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 32px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .burger-line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .burger-line2 {
+  opacity: 0;
+}
+
+.toggle .burger-line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
